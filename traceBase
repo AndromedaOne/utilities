@@ -1,0 +1,12 @@
+#! /usr/bin/env bash
+
+traceFileName=$1
+lastTrace=$(ssh admin@10.49.5.2 ls -1tr /home/lvuser/traceLogs | tail -n 1)
+
+if ! scp admin@10.49.5.2:/home/lvuser/traceLogs/${lastTrace}/${traceFileName}* ~/logs; then
+    echo "No MP file there..."
+    exit 1
+fi
+
+lastMPTrace=$(ls -1tr ~/logs/${traceFileName}* | tail -n 1)
+gnuplot -c ~/gnuplotScripts/trace.csv $lastMPTrace

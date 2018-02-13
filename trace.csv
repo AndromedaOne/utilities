@@ -1,4 +1,4 @@
-set terminal x11 size 1600,1000
+set terminal x11 size 2560,850
 set datafile separator ','
 set terminal x11 linewidth 2
 set timefmt "%m/%d/%Y %H:%M"
