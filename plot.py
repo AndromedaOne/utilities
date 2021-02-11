@@ -88,7 +88,7 @@ def plotAllDataTogether():
             count += 1
         filesCount += 1
 
-    subplot.set_xlabel("Time")
+    subplot.set_xlabel(labels[0])
     subplot.legend(loc="upper right")
 
 def setTitle():
