@@ -1,0 +1,182 @@
+Redirected console output.
+********** Robot program starting **********
+SSID line:     SSID                   : 4905_Romi4
+Romi Robot name = 4905_Romi4
+loaded config commandconstants.conf from D:\git\2020Code/src/main/deploy/robotConfigs/4905_Romi4/commandconstants.conf
+Config(SimpleConfigObject({"DefaultShooterParallelCommandGroup":{"seriesidlespeed":0,"shooteridlespeed":0},"DeployAndRunIntake":{"intakespeed":1},"GyroPIDCommands":{"TurningDTerm":0,"TurningITerm":0,"TurningPTerm":0.0019,"minOutputToMove":0.069,"positionTolerance":1.5,"velocityTolerance":10},"MoveUsingEncoder":{"Kd":0,"Ki":0,"Kp":0.095,"minOutputToMove":0.06,"positionTolerance":0.5,"velocityTolerance":3},"RunIntakeOut":{"outtakespeed":-0.7},"RunShooterSeriesVelocity":{"shooterwheeljoystickscale":20},"RunShooterWheelVelocity":{"shooterwheeljoystickscale":20},"ShootWithLimeLight":{"numOfFeederTestSamples":100},"ShootWithRPM":{"numOfFeederTestSamples":100,"seriesRPMScale":1.5},"ShootingRPM":{"backtrench":4750,"fronttrench":3497,"initline":3760,"targetzone":1800},"TurnToFaceCommand":{"Kd":1.0E-5,"Ki":1.0E-5,"Kp":5.0E-4,"minOutputToMove":0.1,"positionTolerance":1,"velocityTolerance":1},"runshooterseriesvelocity":{"d":0,"i":0,"p":0,"s":0,"tolerance":1,"v":0},"runshooterwheelvelocity":{"d":0,"i":0,"p":0,"s":0,"tolerance":1,"v":0}}))
+loaded config sensors.conf from D:\git\2020Code/src/main/deploy/robotConfigs/4905_Romi4/sensors.conf
+Config(SimpleConfigObject({"RomiGyro":{}}))
+loaded config Shooter.conf from D:\git\2020Code/src/main/deploy/robotConfigs/4905_Romi4/Shooter.conf
+Config(SimpleConfigObject({"ports":{"hood":{"forwardChannel":2,"reverseChannel":3},"shooterone":5,"shooterseries":7,"shootertwo":6},"rpmtranslation":300,"seriesRPMScale":1.5,"seriesidlespeed":0,"seriesticksperrotation":0,"serieswheeljoystickscale":1,"shooteridlespeed":0,"shooterone":{"brakeMode":false,"currentLimit":60,"encoderInverted":false,"hasEncoder":true,"inverted":true},"shooterseries":{"brakeMode":false,"currentLimit":60,"encoderInverted":false,"hasEncoder":false,"inverted":true},"shooterticksperrotation":42,"shootertwo":{"brakeMode":false,"currentLimit":60,"encoderInverted":false,"hasEncoder":true,"inverted":false},"shooterwheeljoystickscale":20,"shootingmap":[120,3760,144,3310,168,3497,192,3492,216,3740,240,4030,264,4050,288,4350,312,4640,336,4750],"shootingrpm":{"backOfGreenZone":4400,"backtrench":4750,"centerOfBlueZone":2150,"centerOfYellowZone":1950,"frontOfRedZone":3050,"fronttrench":3497,"initline":3760,"targetzone":1800}}))
+loaded config Intake.conf from D:\git\2020Code/src/main/deploy/robotConfigs/4905_Romi4/Intake.conf
+Config(SimpleConfigObject({}))
+loaded config Feeder.conf from D:\git\2020Code/src/main/deploy/robotConfigs/4905_Romi4/Feeder.conf
+Config(SimpleConfigObject({}))
+loaded config drivetrain.conf from D:\git\2020Code/src/main/deploy/robotConfigs/4905_Romi4/drivetrain.conf
+Config(SimpleConfigObject({"gyrocorrect":{"kdelay":8,"kproportion":0.022},"left":{"channelA":4,"channelB":5,"hasEncoder":true},"motorController":"romiDrive","pathplanningconstants":{"kMaxAccelerationMetersPerSecondSquared":0.8,"kMaxSpeedMetersPerSecond":0.8,"kPDriveVel":0.085,"kRamseteB":2,"kRamseteZeta":0.7,"kTrackwidthMeters":0.142072613,"kaVoltSecondsSquaredPerMeter":0.0389,"ksVolts":0.929,"kvVoltSecondsPerMeter":6.33},"ports":{"left":0,"right":1},"right":{"channelA":6,"channelB":7,"hasEncoder":true},"rightSideInverted":true,"teleop":{"forwardbackslowscale":0.4,"rotateslowscale":0.4},"ticksPerRevolution":5760,"wheelDiameterInch":2.75591}))
+loaded config Climber.conf from D:\git\2020Code/src/main/deploy/robotConfigs/4905_Romi4/Climber.conf
+Config(SimpleConfigObject({}))
+loaded config LED.conf from D:\git\2020Code/src/main/deploy/robotConfigs/4905_Romi4/LED.conf
+Config(SimpleConfigObject({}))
+Robot name = 4905_Romi4
+Using RomiGyro
+Created RomiGyro
+Using mock ball feeder sensor
+Using fake cameras
+Using fake LimeLight
+Using Fake Power Cell Detector
+Using real Drive Train.
+Using Romi drive train
+kProportion = 0.022
+Enabling Spark Controller "left" for port 0
+Enabling Spark Controller "right" for port 1
+Using mock Climber.
+Using mock Feeder.
+Using mock Intake.
+Using mock Shooter.
+ - Constructing Mock Shooter - 
+Generating Path For Barrel Racing
+End of generated path
+
+End of generated path
+
+Generating Path for Bounce
+End of generated path
+
+End of generated path
+
+End of generated path
+
+End of generated path
+
+Generating path for GalacticSearchPathAAllSixBalls
+Waypoint 1: (0.0, 30.0)
+Waypoint 2: (0.0, 30.0)
+Direction: forward	distance: 0.0	angle: NaN
+Waypoint 1: (0.0, 30.0)
+Waypoint 2: (0.0, 90.0)
+Direction: forward	distance: 60.0	angle: 0.0
+Waypoint 1: (0.0, 90.0)
+Waypoint 2: (30.0, 150.0)
+Direction: forward	distance: 67.08203932499369	angle: 26.56505117707799
+Waypoint 1: (30.0, 150.0)
+Waypoint 2: (60.0, 180.0)
+Direction: forward	distance: 42.42640687119285	angle: 45.0
+Waypoint 1: (60.0, 180.0)
+Waypoint 2: (-60.0, 180.0)
+Direction: forward	distance: 120.0	angle: 270.0
+Waypoint 1: (-60.0, 180.0)
+Waypoint 2: (-30.0, 210.0)
+Direction: forward	distance: 42.42640687119285	angle: 45.0
+Waypoint 1: (-30.0, 210.0)
+Waypoint 2: (0.0, 270.0)
+Direction: forward	distance: 67.08203932499369	angle: 26.56505117707799
+Waypoint 1: (0.0, 270.0)
+Waypoint 2: (0.0, 330.0)
+Direction: forward	distance: 60.0	angle: 0.0
+End of generated path
+
+Generating path for GalacticSearchPathBAllSixBalls
+Waypoint 1: (0.0, 30.0)
+Waypoint 2: (0.0, 30.0)
+Direction: forward	distance: 0.0	angle: NaN
+Waypoint 1: (0.0, 30.0)
+Waypoint 2: (-30.0, 90.0)
+Direction: forward	distance: 67.08203932499369	angle: 333.434948822922
+Waypoint 1: (-30.0, 90.0)
+Waypoint 2: (30.0, 150.0)
+Direction: forward	distance: 84.8528137423857	angle: 45.0
+Waypoint 1: (30.0, 150.0)
+Waypoint 2: (30.0, 180.0)
+Direction: forward	distance: 30.0	angle: 0.0
+Waypoint 1: (30.0, 180.0)
+Waypoint 2: (-30.0, 210.0)
+Direction: forward	distance: 67.08203932499369	angle: 296.565051177078
+Waypoint 1: (-30.0, 210.0)
+Waypoint 2: (-30.0, 240.0)
+Direction: forward	distance: 30.0	angle: 0.0
+Waypoint 1: (-30.0, 240.0)
+Waypoint 2: (30.0, 300.0)
+Direction: forward	distance: 84.8528137423857	angle: 45.0
+Waypoint 1: (30.0, 300.0)
+Waypoint 2: (0.0, 330.0)
+Direction: forward	distance: 42.42640687119285	angle: 315.0
+End of generated path
+
+Generating Path for Bounce
+End of generated path
+
+End of generated path
+
+End of generated path
+
+End of generated path
+
+End of generated path
+
+Generating Path For Barrel Racing
+End of generated path
+
+Generating path for RomiExamplePath
+Waypoint 1: (0.0, 0.0)
+Waypoint 2: (0.0, 0.0)
+Direction: forward	distance: 0.0	angle: NaN
+Waypoint 1: (0.0, 0.0)
+Waypoint 2: (0.0, 28.0)
+Direction: forward	distance: 28.0	angle: 0.0
+Waypoint 1: (0.0, 28.0)
+Waypoint 2: (28.0, 28.0)
+Direction: forward	distance: 28.0	angle: 90.0
+Waypoint 1: (28.0, 28.0)
+Waypoint 2: (28.0, 0.0)
+Direction: forward	distance: 28.0	angle: 180.0
+Waypoint 1: (28.0, 0.0)
+Waypoint 2: (0.0, 0.0)
+Direction: forward	distance: 28.0	angle: 270.0
+End of generated path
+
+Generating path for RomiChallenge1
+Waypoint 1: (0.0, 0.0)
+Waypoint 2: (0.0, 0.0)
+Direction: forward	distance: 0.0	angle: NaN
+Waypoint 1: (0.0, 0.0)
+Waypoint 2: (0.0, 18.0)
+Direction: forward	distance: 18.0	angle: 0.0
+Waypoint 1: (0.0, 18.0)
+Waypoint 2: (-17.75, 18.0)
+Direction: forward	distance: 17.75	angle: 270.0
+Waypoint 1: (-17.75, 18.0)
+Waypoint 2: (-11.32, 8.0)
+Direction: reverse	distance: -11.888856126642294	angle: 327.25898247309703
+Waypoint 1: (-11.32, 8.0)
+Waypoint 2: (-4.5, -5.5)
+Direction: reverse	distance: -15.124893388054014	angle: 333.1977707237477
+Waypoint 1: (-4.5, -5.5)
+Waypoint 2: (-21.85, -3.0)
+Direction: forward	distance: 17.52918994135211	angle: 278.19943968962576
+Waypoint 1: (-21.85, -3.0)
+Waypoint 2: (-22.6, 14.0)
+Direction: forward	distance: 17.016536075241635	angle: 357.47388308838043
+End of generated path
+
+End of generated path
+
+End of generated path
+
+Default simulationInit() method... Override me!
+5622  DefaultFeederCommand start
+retract intake
+Stopping intake.
+Opened trace file C:\Users\frc4905\AppData\Local\Temp\/traceLogs/trace235/Gyro
+Default simulationPeriodic() method... Override me!
+68856  DefaultFeederCommand stop
+93513  DefaultFeederCommand start
+retract intake
+Stopping intake.
+Opened trace file C:\Users\frc4905\AppData\Local\Temp\/traceLogs/trace235/RomiSPathDesiredTracking
+Opened trace file C:\Users\frc4905\AppData\Local\Temp\/traceLogs/trace235/RomiSPathActualTracking
+CommandScheduler loop overrun
+Opened trace file C:\Users\frc4905\AppData\Local\Temp\/traceLogs/trace235/RomiSPathChassisSpeeds
+Opened trace file C:\Users\frc4905\AppData\Local\Temp\/traceLogs/trace235/LeftVelocity
+Opened trace file C:\Users\frc4905\AppData\Local\Temp\/traceLogs/trace235/RightVelocity
+Opened trace file C:\Users\frc4905\AppData\Local\Temp\/traceLogs/trace235/RomiSPath
