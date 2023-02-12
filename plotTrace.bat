@@ -1,3 +1,4 @@
+REM requires UTILITIES4905 env var point to utilities repo
 @ECHO OFF
-gnuplot.exe  -c d:\github\utilities\trace.windows.csv %1
+gnuplot.exe -c %UTILITIES4905%\trace.windows.csv %1
 quit
