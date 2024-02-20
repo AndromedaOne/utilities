@@ -1,0 +1,22 @@
+#! /usr/bin/env bash
+while getopts ":t:h" flag; do
+    case ${flag} in
+        t)
+            traceFile=${OPTARG};;
+        h)
+            echo "Usage: $0 -t <tracefile path/name>"
+            exit 0;;
+        \?)
+            echo "ERROR: must provide a trace file (csv)\n"
+            exit 4;;
+    esac
+done
+if [ -z "$traceFile" ]; then
+    echo "ERROR: must provide a trace file (csv file): -t <traceFile>"
+    exit 2
+fi
+if [ ! -f $traceFile ]; then
+    echo "ERROR: cannot open traceFile: $traceFile"
+    exit 3
+fi
+gnuplot -c ~/utilities4905/trace.windows.csv $traceFile
