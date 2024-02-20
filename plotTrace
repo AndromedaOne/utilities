@@ -1,22 +1,38 @@
 #! /usr/bin/env bash
-while getopts ":t:h" flag; do
+
+printHelp() {
+    echo
+    echo "Usage: $0 -t <tracefile path/name> <-m [this dumps mouse/key bindings]>"
+    echo
+}
+while getopts ":t:hm" flag; do
     case ${flag} in
         t)
             traceFile=${OPTARG};;
+        m)
+            echo "mouse and keybindings: "
+            cat $(dirname "$0")/gnuplot.keybindings.txt
+            echo
+            echo "NOTE: this file is located at: $(basename "$0")/gnuplot.keybindings.txt"
+            echo
+            exit 0;;
         h)
-            echo "Usage: $0 -t <tracefile path/name>"
+            printHelp
             exit 0;;
         \?)
-            echo "ERROR: must provide a trace file (csv)\n"
+            echo "ERROR: must provide a trace file (csv)"
+            printHelp
             exit 4;;
     esac
 done
 if [ -z "$traceFile" ]; then
     echo "ERROR: must provide a trace file (csv file): -t <traceFile>"
+    printHelp
     exit 2
 fi
 if [ ! -f $traceFile ]; then
     echo "ERROR: cannot open traceFile: $traceFile"
+    printHelp
     exit 3
 fi
 gnuplot -c ~/utilities4905/trace.windows.csv $traceFile

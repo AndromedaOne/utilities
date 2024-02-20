@@ -1,0 +1,53 @@
+ <B1> doubleclick   send mouse coordinates to clipboard (pm win wxt x11)
+ <B2>               annotate the graph using `mouseformat` (see keys '1', '2')
+                    or draw labels if `set mouse labels is on`
+ <Ctrl-B2>          remove label close to pointer if `set mouse labels` is on
+ <B3>               mark zoom region (only for 2d-plots and maps)
+ <B1-Motion>        change view (rotation); use <Ctrl> to rotate the axes only
+ <B2-Motion>        change view (scaling); use <Ctrl> to scale the axes only
+ <Shift-B2-Motion>  vertical motion -- change xyplane
+ <B3-Motion>        change view (azimuth)
+ <wheel-up>           scroll up (in +Y direction)
+ <wheel-down>         scroll down
+ <shift-wheel-up>     scroll left (in -X direction)
+ <shift-wheel-down>   scroll right
+ <Control-WheelUp>    zoom in on mouse position
+ <Control-WheelDown>  zoom out on mouse position
+ <Shift-Control-WheelUp>    pinch on x
+ <Shift-Control-WheelDown>  expand on x
+
+ q            * close this plot window
+
+ a               `builtin-autoscale` (set autoscale keepfix; replot)
+ b               `builtin-toggle-border`
+ e               `builtin-replot`
+ g               `builtin-toggle-grid`
+ h               `builtin-help`
+ i               `builtin-invert-plot-visibilities`
+ l               `builtin-toggle-log` y logscale for plots, z and cb for splots
+ L               `builtin-nearest-log` toggle logscale of axis nearest cursor
+ m               `builtin-toggle-mouse`
+ r               `builtin-toggle-ruler`
+ V               `builtin-set-plots-invisible`
+ v               `builtin-set-plots-visible`
+ 1               `builtin-previous-mouse-format`
+ 2               `builtin-next-mouse-format`
+ 5               `builtin-toggle-polardistance`
+ 6               `builtin-toggle-verbose`
+ 7               `builtin-toggle-ratio`
+ n               `builtin-zoom-next` go to next zoom in the zoom stack
+ p               `builtin-zoom-previous` go to previous zoom in the zoom stack
+ u               `builtin-unzoom`
+ +               `builtin-zoom-in` zoom in
+ =               `builtin-zoom-in` zoom in
+ -               `builtin-zoom-out` zoom out
+ Right           `scroll right in 2d, rotate right in 3d`; <Shift> faster
+ Up              `scroll up in 2d, rotate up in 3d`; <Shift> faster
+ Left            `scroll left in 2d, rotate left in 3d`; <Shift> faster
+ Down            `scroll down in 2d, rotate down in 3d`; <Shift> faster
+ <               `rotate azimuth left in 3d`; <ctrl> faster
+ >               `rotate azimuth right in 3d`; <ctrl> faster
+ Escape          `builtin-cancel-zoom` cancel zoom region
+ Ctrl-d        * `done = 1`
+
+              * indicates this key is active from all plot windows
