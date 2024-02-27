@@ -1,8 +1,12 @@
 #! /usr/bin/env bash
 
+scriptBaseName=$(basename "$0")
+
 printHelp() {
     echo
-    echo "Usage: $0 -t <tracefile path/name> <-m [this dumps mouse/key bindings]>"
+    echo "Usage: $scriptBaseName -t <tracefile path/name> [-m]"
+    echo -e "\t-t: the trace file path/name to use"
+    echo -e "\t-m: optional switch to dump the mouse/key bindings for gnuplot\n"
     echo
 }
 while getopts ":t:hm" flag; do
@@ -10,10 +14,11 @@ while getopts ":t:hm" flag; do
         t)
             traceFile=${OPTARG};;
         m)
+            keyBindingLocation=$(dirname "$0")/gnuplot.keybindings.txt
             echo "mouse and keybindings: "
-            cat $(dirname "$0")/gnuplot.keybindings.txt
+            cat $keyBindingLocation
             echo
-            echo "NOTE: this file is located at: $(basename "$0")/gnuplot.keybindings.txt"
+            echo "NOTE: this file is located at: $keyBindingLocation"
             echo
             exit 0;;
         h)
